@@ -1,0 +1,275 @@
+@charset "UTF-8";
+:root{
+    --font-principal: arial, verdana, helvetica, sans-serif;
+    --font-header-aside: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --font-aside:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    --cor0:#aee0ff;
+    --cor1:#46b8ff;
+    --cor2:#077fca;
+    --cor3:#1b5881;
+    --cor4:#0a4066;
+    --cor5:#05263d;;
+    
+    
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color:#aee0ff;
+}
+a.externo::before{
+    content: '\00A0\1f517';
+}
+header{
+    font-family: var(--font-header-aside);
+    min-height: 400px;
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+    background-image: url("imagens/dev-13.jpg");
+    min-width: 128px;
+    max-width: 1280px;
+    
+}
+header:hover{
+    background-image: url("imagens/dev-11.jpg");
+}
+header:active{
+    background-image: url("imagens/dev-12.jpg");
+}
+body > hr{
+  border-left: 0px;
+  border-right: 0px;
+}
+header > img{
+    width: 100%;
+}
+header > h1{
+    color:white;
+    text-align: center;
+    font-size:3em;
+    font-weight: normal;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.384);
+    padding-top: 150px;
+   
+}
+nav{
+    font-family: var(--font-principal);
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
+    padding: 20px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+}
+nav > #foto{
+    background-color: transparent;
+    
+}
+nav a{
+    color:white;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 2px;
+    transition-duration: .5s;
+    
+}
+nav > a:hover{
+    background-color:var(--cor1);
+    color:var(--cor5);
+}
+nav > a:active{
+    background-color: var(--cor0);
+}
+main{
+    background-color: white;
+    min-width: 100px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+article  > h2{
+    text-align: center;
+    padding-top: 50px;
+    font-family: var(--font-header-aside);
+    font-weight: normal;
+    color: var(--cor4);
+}
+article > h2:hover{
+    color: var(--cor1);
+}
+article p{
+    font-family: var(--font-principal);
+    text-indent: 30px;
+    margin: 15px 0px;
+    text-align: justify;
+    font-size: 1em;
+    line-height: 1.8em;
+    
+}
+article > img{
+    
+   padding: 10px;
+   display: block;
+   margin: auto;
+   margin-bottom: 0px;
+}
+article strong{
+    font-weight: bold;
+    color: var(--cor4);
+}
+article > ol{
+    list-style-type: '\00A0\00A0';
+    list-style-position: inside;
+    columns: 1;
+}
+aside{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color:var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.192);
+    font-family: var(--font-principal);
+    font-weight: normal;
+    text-align: justify;
+    text-indent: 1.8em;
+    list-style: none;
+}
+
+aside > h3{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    font-family: var(--font-header-aside);
+    font-weight: normal;
+    font-size: 1.5em;
+    text-align: center;
+}
+aside > h3::before{
+    content: url("imagens/\ contato-2.png");
+    padding: 10px;
+    text-align: center;
+}
+aside > #t3::before{
+   
+    content: url("imagens/contato.png");
+}
+aside a{
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--cor4);
+    color: var(--cor3);
+}
+aside  a:hover{
+    text-decoration: underline;
+}
+aside a:active{
+    color: var(--cor1);
+}
+aside > ul{
+    list-style-type: '\00A0\00A0';
+    list-style-position: inside;
+    columns: 1;
+}
+#galeria{
+    background-color: var(--cor1);
+    margin: 50px 0px 50px 0px;
+    text-align: center;
+    
+
+}
+#galeria > .foto{
+    margin: auto;
+
+}
+
+#galeria > #f1{
+    margin-top: 10px;
+}
+#f1{ 
+    background-image: url("imagens/contador-inteligente.pn");
+    
+}
+#f2{ 
+    background-image: url("imagens/edom-calculator.pn");
+}
+#f3{
+    background-image: url("imagens/goodriver.pn");
+}
+#f4{
+    background-image: url("imagens/relogio-web.pn");
+}
+#f5{
+    background-image: url("imagens/tabuada-1.pn");
+}
+#f6{
+    background-image: url("imagens/tabuada-2.pn");
+}
+#f7{
+    background-image: url("imagens/verificador\ de\ idade.pn");
+}
+#f8{
+    background-image: url("imagens/baskara.pn");
+}
+#f9{
+    background-image: url("imagens/rj-f1.jpg");
+}
+#f10{
+    background-image: url("imagens/rj-blue.jpg");
+}
+#f11{
+    background-image: url("imagens/mano\ adilson.jpg");
+}
+#f12{
+    background-image: url("imagens/mana\ valéria.jpg");
+}
+footer{
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
+    font-size: 0.8em;
+    min-width: 128px;
+    max-width: 1280px;
+
+}
+
+footer > p > a{
+    padding: 20px 10px;
+    color: white;
+    text-decoration: none;
+    
+   
+}
+footer > p > a:hover{
+    color: white;
+    text-decoration: underline;
+}
+footer > p{
+    color: white;
+    font-family: var(--font-principal);
+    padding: 30px;
+    text-align: center;
+  
+}
+footer aside  p{
+    text-align: justify;
+    padding: 10px;
+    font-family: var(--font-principal);
+    color: white;
+}
+
+footer aside a{
+    color: var(--cor3);
+    font-weight: bolder;
+    text-decoration: none;
+    
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
+}

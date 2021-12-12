@@ -1,0 +1,35 @@
+fieldset{
+    border-radius: 10px;
+}
+h1{
+    margin-top: 50px;
+    text-align: center;
+    
+}
+body{
+    background-color: rgb(0, 89, 255);
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+div{
+    background-color: black;
+    margin: 15px 5px 5px 5px;
+    border-radius: 7px;
+    min-width: 100px;
+    max-width: 1280px;
+    padding: 5px;
+}
+hr{
+   
+}
+input{
+    border-radius: 7px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.360);
+}
+p{
+    font-size: x-small;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}

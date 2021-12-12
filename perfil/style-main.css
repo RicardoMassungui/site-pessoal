@@ -1,0 +1,204 @@
+@charset "UTF-8";
+:root{
+    --font-principal: arial, verdana, helvetica, sans-serif;
+    --font-header-aside: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --font-aside:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    --cor0:#aee0ff;
+    --cor1:#46b8ff;
+    --cor2:#077fca;
+    --cor3:#1b5881;
+    --cor4:#0a4066;
+    --cor5:#05263d;;
+    
+    
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color:var(--cor0);
+}
+a.externo::before{
+    content: '\00A0\1f517';
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+    font-family: var(--font-header-aside);
+    background-color:var(--cor1);
+    min-height: 400px;
+    background-image: url("imagens/dev-9.jpg");
+    min-width: 128px;
+    max-width: 1280px;
+    
+}
+header:hover{
+    background-image: url("imagens/dev-18.jpg");
+}
+header:active{
+    background-image: url("imagens/dev-19.jpg");
+}
+header > h1{
+    color: white;
+    text-align: center;
+    font-size:4em;
+    font-weight: normal;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.384);
+    padding-top: 150px;
+
+}
+nav{
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
+    padding: 20px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+    font-family: var(--font-principal);
+    
+}
+nav > #foto{
+    background-color: transparent;
+}
+nav > a{
+    color:white;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 2px;
+    transition-duration: .5s;
+   
+}
+nav > a:hover{
+    background-color:var(--cor1);
+    color:var(--cor5);
+}
+nav > a:active{
+    background-color: var(--cor0);
+}
+main{
+    background-color: white;
+    min-width: 100px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+article{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+article  > h2{
+    text-align: center;
+    font-family: var(--font-header-aside);
+    font-weight: normal;
+    color: var(--cor4);
+}
+article > h2:hover{
+    color: var(--cor1);
+}
+article p{
+    font-family: var(--font-principal);
+    text-indent: 30px;
+    margin: 15px 0px;
+    text-align: justify;
+    font-size: 1em;
+    line-height: 1.8em;
+    
+}
+article > img{
+    
+    padding: 0px;
+   display: block;
+   margin: auto;
+   margin-bottom: 50px;
+   margin-top: 10px;
+   border: 1px solid #1b5881;
+}
+article strong{
+    font-weight: bold;
+    color: var(--cor4);
+}
+aside{
+    background-color:var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.192);
+    font-family: var(--font-principal);
+    font-weight: normal;
+    text-align: justify;
+    text-indent: 1.8em;
+}
+aside > h3{
+    background-color: var(--cor4) ;
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    font-family: var(--font-header-aside);
+    font-weight: normal;
+    font-size: 1.5em;
+    text-align: center;
+}
+aside a{
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--cor4);
+    color: var(--cor3);
+}
+aside  a:hover{
+    text-decoration: underline;
+}
+aside a:active{
+    color: var(--cor1);
+}
+aside > ul{
+    list-style-type: '\00A0\00A0';
+    list-style-position: inside;
+    columns: 1;
+}
+footer{
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
+    min-width: 128px;
+    max-width: 1280px;
+    font-size: 0.8em;
+    min-height: 50px;
+      
+}
+footer > p > a{
+    padding: 20px 10px;
+    color: white;
+    text-decoration: none;
+   
+}
+footer > p > a:hover{
+    color: white;
+    text-decoration: underline;
+}
+footer > p{
+    color: white;
+    font-family: var(--font-principal);
+    padding: 30px 10px;
+    text-align: center;
+    
+}
+footer aside  p{
+    text-align: justify;
+    padding: 10px;
+    font-family: var(--font-principal);
+    color: white;
+}
+
+footer aside a{
+    color: var(--cor3);
+    font-weight: bolder;
+    text-decoration: none;
+    
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
+}
+

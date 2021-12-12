@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ecalculator.css">
+    <link rel="icon" href="logotipo-javascript.png" type="image/png">
+    <title>EDOM-Calculadora-Kid</title>
+    
+</head>
+<body onload="atualizar()">
+               
+    <header>
+        <h1>&#x1F5A9;EDOM-Calculator-Kid </h1>
+    </header>
+    <section>
+        <hr>
+        <div>
+            <h2 style="color:blue;">Adicionador (+)</h2>    
+            <input type="number" name="txtn1" id="txtn1"> <strong style="color: blue;"> + </strong>
+            <input type="number" name="txtn2" id="txtn2"> <strong style="color: blue;"> &hArr; </strong> 
+            <input id="blue" type="button" style="background: blue;" style="color: white;" value="Adicionar" onclick="adicionar()">
+            <div name="res" style="background-color: blue;"><strong>#Total: </strong></div><br>
+        </div>
+        <hr>
+        
+        <div>
+            <h2 style="color:red;">Subtraidor (-)</h2>
+            <input type="number" name="txtn1s" id="txtn1s"> <strong style="color: red;"> - </strong>
+            <input type="number" name="txtn2s" id="txtn2s"> <strong style="color: red;"> &hArr; </strong>
+            <input id="red" type="button" style="background: red;" style="color: white;" value="Subtrair" onclick="subtrair()">
+            <div name="res2" style="background: red;"><strong>#Resto:</strong></div><br>
+        </div>
+        <hr>
+        
+        <div>
+            <h2 style="color: violet;">Multiplicador (x)</h2>
+            <input type="number" name="txtn1m" id="txtn1m"><strong style="color: violet;"> x </strong>
+            <input type="number" name="txtn2m" id="txtn2m"><strong style="color:violet;"> &hArr; </strong>    
+            <input id="violet" type="button" style="background: violet;" style="color: white;" value="Multiplicar" onclick="multiplicar()">
+            <div name="res3" style="background:violet;"><strong>#Produto:</strong></div><br>
+        </div>
+        <hr>
+        
+        <div>
+            <h2 style="color: green;">repartidor (/)</h2>
+            <input type="number" name="txtn1r" id="txtn1r"><strong style="color: green;"> / </strong>
+            <input type="number" name="txtn2r" id="txtn2r"><strong style="color: green;"> &hArr; </strong>    
+            <input id="green" type="button" style="background: green;" style="color: white;" value="repartir" onclick="repartir()">
+            <div name="res4" style="background: green;"><strong>#coeficiente:</strong></div><br>
+        </div>
+        <hr>
+    <a  href="pg-projectos.html" target="_self" rel="next"><input type="button" value="voltar"></a>
+    </section>
+    
+    
+
+<footer>
+    <strong><em><p style="text-align: center;">&copy; 2021 CursoemVideo-EasySoft por Ricardo Massungui.</p></em></strong>
+</footer>
+<script src="ecalculator.js"></script>
+</body>
+</html>
+     
+    

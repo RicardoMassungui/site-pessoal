@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logotipo-javascript.png" type="image/png">
+    <link rel="stylesheet" href="verificador.css">
+    
+    <title>D-02_verificador de Idade</title>
+</head>
+<body onload="atualizar()">
+    
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+
+    <section>
+    
+     <div id="dados">
+        <p>Mês de nascimento: 
+            <input type="number" name="textmes" id="textmes">
+            <!--<input type="month" name="textmes" id="textmes">-->
+           <!--<input type="date" name="textdate" id="textdate">--> 
+        </p>
+        <p>Ano de nascimento: 
+            <input type="number" name="textano" id="textano">
+        </p>
+        <p>Sexo: 
+            <input type="radio" name="radsex" id="masc" checked>   
+            <label for="masc">Masculino<label>
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Feminino</label>
+        </p>
+        <p>
+            <input type="button" value="Verificar" onclick="verificar()">
+        </p>
+    </div>   
+    
+    <div id="res">
+        <p id="pg">Preencha os dados acima para ver o resultado!</p>
+        <audio  id="voz" src="audio/resultado.3gpp" controls autoplay loop></audio>
+    </div>
+        <a  href="pg-projectos.html" target="_self" rel="next"><input type="button" value="voltar"></a>
+    </section>
+    
+    
+    <footer>
+        
+    <select>
+        <option>digite as datas de exemplo!</option>
+        <option>Mês:04/Ano:2004</option>
+        <option>Mês:02/Ano:1995</option>
+        <option>Mês:08/Ano:2015</option>
+        <option>Mês:05/Ano:2002</option>
+        <option>Mês:01/Ano:1996</option>
+        <option>Mês:12/Ano:1967</option>
+        <option>Mês:02/Ano:1997</option>
+        <option>Mês:12/Ano:2004</option>
+        <option>Mês:10/Ano:1991</option>
+        <option>Mês:12/Ano:1988</option>
+        <option>Mês:02/Ano:1987</option>
+        <option>Mês:10/Ano:1986</option>
+        <option>Mês:04/Ano:2011</option>
+        <option>Mês:06/Ano:2010</option>
+        <option>Mês:06/Ano:1996</option>
+        <option>Mês:09/Ano:1996</option>
+        <option>Mês:04/Ano:1992</option>
+        <option>Mês:10/Ano:1988</option>
+        <option>Mês:10/Ano:1987</option>
+        <option>Mês:07/Ano:2012</option>
+        
+
+
+
+        
+    </select>
+    <em><p style="font-size: smaller; margin-top: 350px;">&copy; 2021 CursoemVideo-EasySoft, by Ricardo Massungui.</p></em>
+</footer>
+
+    <script src="verificador.js"></script>
+
+</body>
+</html>

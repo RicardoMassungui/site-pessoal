@@ -1,0 +1,52 @@
+body{
+    background: rgb(0, 132, 255);
+    font: normal 15px arial;
+    background-image: linear-gradient(90deg, rgb(248, 248, 36), rgb(235, 130, 148), rgb(34, 34, 226), rgb(32, 170, 170));
+}
+
+header{
+    color: white;
+    text-align: center;
+    
+}
+
+div{
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+
+}
+img{
+    margin-top: 15px;
+    border-radius: 10px;
+}
+p#pg{
+    
+    color: white;
+}
+body > select{
+    margin: auto;
+}
+footer > select{
+  margin: auto;
+  min-width: 50px;
+  margin-top: 20px;
+
+}
+section{
+    background: lightseagreen;
+    border-radius: 10px;
+    padding: 7px;
+    margin: auto;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.360);
+    min-width: 100px;
+    max-width: 500px;
+ 
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

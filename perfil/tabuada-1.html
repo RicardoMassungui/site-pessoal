@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logotipo-javascript.png" type="image/png">
+    <link rel="stylesheet" href="tabuada-1.css">
+    <title>D-03_Tabuada</title>
+</head>
+<body onload="atualizar()">
+    
+    <header>
+        <h1>Tabuada-Web</h1>
+    </header>
+
+    <section>
+    
+        <div>
+            <p>Multiplicador:
+                <input type="number" name="txtn1" id="txtn1">
+            </p>
+            <p>Multiplicando: 
+                <input type="number" name="txtn2" id="txtn2">
+            </p>
+            <p>
+                <input type="button" value="mostrar Tabuada" onclick="calcular()">
+            </p>
+        </div>
+        <div>
+            <select name="Tabuada" id="res" size="10px">
+                <option>Digite qualquer número nas barras acima!</option>
+            </select>
+        </div>
+    <a  href="pg-projectos.html" target="_self" rel="next"><input type="button" value="voltar"></a>
+    </section>
+    
+    <footer>
+        <em><p style="font-size: smaller;">&copy; 2021 CursoemVideo-EasySoft, by Ricardo Massungui.</p></em>
+    </footer>
+    </footer>
+
+    <script src="tabuada-1.js"></script>
+
+</body>
+</html>

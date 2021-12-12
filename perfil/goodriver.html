@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logotipo-javascript.png" type="image/png">
+    <link rel="stylesheet" href="goodriver.css">
+    <title>Goodriver</title>
+</head>
+<body>
+    <h1>&#x1F46E; Goodriver</h1>
+    <hr style="margin-top: 50px;">
+    <fieldset style="margin-top: 50px;">
+        <legend>Ficha de trânsito</legend>
+        idade do condutor(a): <input type="number" name="idade" id="idade" style="margin-top: 15px;"> anos<br>
+        Velocidade percorrida: <input type="number" name="textv" id="textv"style="margin-top: 15px;"> km/h           
+        &nbsp;&nbsp;<input type="button" value="verificar dados" style="margin-bottom: 15px; " onclick="verificar()">
+    </fieldset><br><br>
+    <strong><div name="resv" style="margin-bottom: 15px;">#Nivél de velocidade registada: </div></strong>
+    <strong><div name="resv2" style="margin-bottom: 15px;">#Nivél de idade: </div></strong>
+    <strong><div id="aviso" style="margin-top: 15px;">#Aviso de segurança:</div></strong>
+    
+    <script>
+        
+        var user = prompt("Qual é o seu nome? ")
+        alert(`${user.toUpperCase()}, Seja bem-vindo ao nosso appweb! `)
+        
+        function verificar(){
+            var name = prompt("Nome do condutor(a): ")
+            alert(`${name.toUpperCase()}! aguarde os resultados...`) 
+            var aviso = document.getElementById('aviso')
+            var textvn1 = document.getElementsByName('textv')[0]
+            var textresv = document.getElementsByName('resv')[0]
+            var idade = document.getElementsByName('idade')[0]
+            var textid = document.getElementsByName('resv2')[0] 
+            var textvask = Number(textvn1.value)
+            var idadeask = Number(idade.value) 
+            if (textvask > 60){
+               textresv.style.background = 'red'
+               textresv.innerHTML = `<strong>$ Senhor(a) ${name.toUpperCase()}, Foste multado! pelo excesso de velocidade.</strong>`
+              
+            }else{ 
+                textresv.style.background = 'green'
+                textresv.innerHTML = `<strong># Senhor(a) ${name.toUpperCase()}, parabéns! pela responsabilidade!</strong>`
+        
+            }
+            
+            if (idadeask <= 17){
+                textid.style.background = 'red'
+                textid.innerHTML  = `<strong># Senhor(a) ${name.toUpperCase()}, infelizmente estás inapto para dirigir por seres menor de idade!.</strong>`
+                
+            }else{
+                textid.style.background = 'green'
+                textid.innerHTML = `<strong>#  maior de idade! apto a dirigir.</strong>`
+                
+            }
+
+            aviso.style.color = 'black'
+            aviso.style.background = `yellow`
+            aviso.innerHTML = `<strong># Senhor(a) ${name.toUpperCase()}, Use sempre! o cinto de segurança!</strong>`
+           
+        }
+    </script>
+    
+    <hr style="margin-top: 300px;"> 
+    <a  href="pg-projectos.html" target="_self" rel="next"><input type="button" value="voltar"></a>
+    <strong><em><p style="text-align: center;">&copy; 2021 CursoemVideo-EasySoft inc, by Ricardo Massungui.</p></em></strong>
+    
+    
+    
+    
+
+
+</body>
+</html>
