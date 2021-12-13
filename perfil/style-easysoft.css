@@ -177,6 +177,7 @@ aside > ul{
     list-style-type: '\00A0\00A0';
     list-style-position: inside;
     columns: 1;
+    list-style: none;
 }
 #galeria{
     background-color: var(--cor1);

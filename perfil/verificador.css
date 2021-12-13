@@ -44,7 +44,9 @@ section{
     max-width: 500px;
  
 }
-
+audio#voz{
+    text-align: center;
+}
 footer{
     color: white;
     text-align: center;
