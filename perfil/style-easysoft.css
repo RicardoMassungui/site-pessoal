@@ -153,7 +153,7 @@ aside > h3{
     text-align: center;
 }
 aside > h3::before{
-    content: url("imagens/\ contato-2.png");
+    content: url("imagens/contato-2.png");
     padding: 10px;
     text-align: center;
 }
