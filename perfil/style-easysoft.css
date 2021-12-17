@@ -20,6 +20,11 @@
 body{
     background-color:#aee0ff;
 }
+@media only screen and (max-width: 510px) {
+    nav a{
+        width: 100%;
+    }
+}
 a.externo::before{
     content: '\00A0\1f517';
 }
@@ -30,10 +35,10 @@ header{
     background-image: url("imagens/dev-13.jpg");
     min-width: 128px;
     max-width: 1280px;
-    
 }
 header:hover{
     background-image: url("imagens/dev-11.jpg");
+    -webkit-transition: all .4s ease-in;
 }
 header:active{
     background-image: url("imagens/dev-12.jpg");
@@ -52,7 +57,10 @@ header > h1{
     font-weight: normal;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.384);
     padding-top: 150px;
-   
+}
+header > h1:hover{
+    color: red;
+    -webkit-transition: all .4s ease-in;
 }
 nav{
     font-family: var(--font-principal);
@@ -64,21 +72,44 @@ nav > #foto{
     background-color: transparent;
     
 }
-nav a{
+nav > #foto:hover{
+    -webkit-transform: scale(1.1);
+    -webkit-transition: all .4s ease-in;
+}
+
+nav > a{
     color:white;
     padding: 5px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 2px;
-    transition-duration: .5s;
-    
+    transition-duration: .4s;
+    display:inline-table;
 }
 nav > a:hover{
-    background-color:var(--cor1);
-    color:var(--cor5);
+   
+    -webkit-transform: scale(1.1);
+    -webkit-transition: all .4s ease;
+}
+
+nav > a:hover{
+    /*background-color:var(--cor1);*/
+     color:red;
 }
 nav > a:active{
-    background-color: var(--cor0);
+    background-color: none;
+}
+nav > #lksobre::before{
+    content: '\1f913\00A0\00A0';
+}
+nav > #lkeasysoft::before{
+    content: '\1F310\00A0\00A0';
+}
+nav > #lkprojectos::before{
+    content: '\1F4C3\00A0\00A0';
+}
+nav > #foto::before{
+    content: '\1F393\00A0\00A0';
 }
 main{
     background-color: white;

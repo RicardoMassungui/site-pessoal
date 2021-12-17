@@ -12,6 +12,7 @@
     
     
 }
+
 *{
     margin: 0px;
     padding: 0px;
@@ -20,25 +21,30 @@
 body{
     background-color:var(--cor0);
 }
+@media only screen and (max-width: 510px) {
+    nav a{
+        width: 100%;
+    }
+}
 a.externo::before{
     content: '\00A0\1f517';
 }
 
 header{
-    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+    background-color: linear-gradient(to bottom, var(--cor2), var(--cor4));
     font-family: var(--font-header-aside);
     background-color:var(--cor1);
     min-height: 400px;
-    background-image: url("imagens/dev-9.jpg");
+    background: url("imagens/dev-9.jpg");
     min-width: 128px;
     max-width: 1280px;
-    
 }
 header:hover{
-    background-image: url("imagens/dev-18.jpg");
+    background: url("imagens/dev-18.jpg");
+    -webkit-transition: all .4s ease-in;
 }
 header:active{
-    background-image: url("imagens/dev-19.jpg");
+    background: url("imagens/dev-19.jpg");
 }
 header > h1{
     color: white;
@@ -48,6 +54,10 @@ header > h1{
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.384);
     padding-top: 150px;
 
+}
+header > h1:hover{
+    color: red;
+    -webkit-transition: all .4s ease-in;
 }
 nav{
     background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
@@ -59,21 +69,44 @@ nav{
 nav > #foto{
     background-color: transparent;
 }
+nav > #foto:hover{
+    -webkit-transform: scale(1.1);
+    -webkit-transition: all .4s ease-in;
+}
+
 nav > a{
     color:white;
     padding: 5px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 2px;
-    transition-duration: .5s;
-   
+    transition-duration: .4s;
+    display: inline-table;
 }
 nav > a:hover{
-    background-color:var(--cor1);
-    color:var(--cor5);
+   
+    -webkit-transform: scale(1.1);
+    -webkit-transition: all .4s ease;
+}
+
+nav > a:hover{
+    /*background-color:var(--cor1);*/
+     color:red;
 }
 nav > a:active{
-    background-color: var(--cor0);
+    background-color: none;
+}
+nav > #lksobre::before{
+    content: '\1f913\00A0\00A0';
+}
+nav > #lkeasysoft::before{
+    content: '\1F310\00A0\00A0';
+}
+nav > #lkprojectos::before{
+    content: '\1F4C3\00A0\00A0';
+}
+nav > #foto::before{
+    content: '\1F393\00A0\00A0';
 }
 main{
     background-color: white;
@@ -95,6 +128,7 @@ article  > h2{
     font-family: var(--font-header-aside);
     font-weight: normal;
     color: var(--cor4);
+    margin-bottom: 30px;
 }
 article > h2:hover{
     color: var(--cor1);
@@ -106,21 +140,54 @@ article p{
     text-align: justify;
     font-size: 1em;
     line-height: 1.8em;
-    
+
 }
 article > img{
-    
-    padding: 0px;
+   padding: 0px;
    display: block;
    margin: auto;
    margin-bottom: 50px;
    margin-top: 10px;
-   border: 1px solid #1b5881;
+   border: 1px solid var(--cor5);
 }
 article strong{
     font-weight: bold;
     color: var(--cor4);
 }
+div#ifundo > img#iperfil{
+    content: url("imagens/rj-red3.jpg");
+    width: 200px;
+    height: 200px;
+    padding: 0px;
+    display: block;
+    margin: auto;
+    margin-top: 300px;
+    border: 2px solid var(--cor5);
+    
+}
+div#ifundo > img#iperfil:hover{
+    content: url("imagens/rj-blue-2.jpg");
+    -webkit-transition: all .4s ease-in;
+    -webkit-transform: scale(1.2);
+}
+div#ifundo > img#iperfil:active{
+    content: url("imagens/rj-blue-2.jpg");
+    -webkit-transition: all .4s ease-in;
+}
+div#ifundo{
+   background-image: url("imagens/rj-fundo-2.jpg");
+   height: 400px;
+   margin: auto;
+   margin: 0px -10px;
+   margin-bottom: 160px;
+   margin-top: 50px;
+   border: 1px solid var(--cor5);
+}
+div#ifundo:hover{
+  background-image: url("imagens/rj-fundo.jpg");
+  -webkit-transition: all .4s ease-in;
+}
+
 aside{
     background-color:var(--cor1);
     padding: 10px;
@@ -148,7 +215,7 @@ aside a{
     color: var(--cor4);
     color: var(--cor3);
 }
-aside  a:hover{
+aside a:hover{
     text-decoration: underline;
 }
 aside a:active{

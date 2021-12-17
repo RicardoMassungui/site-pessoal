@@ -20,23 +20,28 @@
 body{
     background-color:#aee0ff;
 }
+@media only screen and (max-width: 510px) {
+    nav a{
+        width: 100%;
+    }
+}
 a.externo::before{
     content: '\00A0\1f517';
 }
 header{
     font-family: var(--font-header-aside);
     min-height: 400px;
-    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
-    background-image: url("imagens/dev-5.jpg");
+    background: linear-gradient(to bottom, var(--cor2), var(--cor4));
+    background: url("imagens/dev-5.jpg");
     min-width: 128px;
     max-width: 1280px;
-    
+    -webkit-transition: all .4s ease-in;
 }
 header:hover{
-    background-image: url("imagens/dev-4.jpg");
+    background: url("imagens/dev-4.jpg");
 }
 header:active{
-    background-image: url("imagens/dev-7.jpg");
+    background: url("imagens/dev-7.jpg");
 }
 body > hr{
   border-left: 0px;
@@ -52,34 +57,60 @@ header > h1{
     font-weight: normal;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.384);
     padding-top: 150px;
-   
+}
+header > h1:hover{
+    color: red;
+    -webkit-transition: all .4s ease-in;
 }
 nav{
     font-family: var(--font-principal);
-   background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
     padding: 20px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+    
 }
 nav > #foto{
     background-color: transparent;
     
 }
+nav > #foto:hover{
+    -webkit-transform: scale(1.1);
+    -webkit-transition: all .4s ease-in;
+}
+
 nav > a{
     color:white;
     padding: 5px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 2px;
-    transition-duration: .5s;
-    
-   
+    transition-duration: .4s;
+    display: inline-table;
 }
 nav > a:hover{
-    background-color:var(--cor1);
-    color:var(--cor5);
+   
+    -webkit-transform: scale(1.1);
+    -webkit-transition: all .4s ease;
+}
+
+nav > a:hover{
+    /*background-color:var(--cor1);*/
+     color:red;
 }
 nav > a:active{
-    background-color: var(--cor0);
+    background-color: none;
+}
+nav > #lksobre::before{
+    content: '\1f913\00A0\00A0';
+}
+nav > #lkeasysoft::before{
+    content: '\1F310\00A0\00A0';
+}
+nav > #lkprojectos::before{
+    content: '\1F4C3\00A0\00A0';
+}
+nav > #foto::before{
+    content: '\1F393\00A0\00A0';
 }
 main{
     background-color: white;
@@ -185,19 +216,23 @@ aside > ul{
 
 }
 aside img{
-    width: 200px;
+    width:200px;
     height: 200px;
     border-radius: 10px;
-    border: 1px solid white;
+    border: 5px solid var(--cor3);
     display: inline-table;
     margin-top: 5px;
+    
+}
+aside img:hover{
+    -webkit-transform: scale(1.2);
+    -webkit-transition: all .4s ease-in;
 }
 #galeria > #f1{
     margin-top: 10px;
 }
 #f1{ 
     background-image: url("imagens/contador-inteligente.pn");
-    
 }
 #f2{ 
     background-image: url("imagens/edom-calculator.pn");
@@ -225,6 +260,7 @@ aside img{
 }
 #f10{
     background-image: url("imagens/rj-blue.jpg");
+   
 }
 #f11{
     background-image: url("imagens/mano\ adilson.jpg");

@@ -20,24 +20,30 @@
 body{
     background-color:#aee0ff;
 }
+@media only screen and (max-width: 510px) {
+    nav a{
+        width: 100%;
+    }
+}
 a.externo::before{
     content: '\00A0\1f517';
 }
 
 header{
-    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+    background: linear-gradient(to bottom, var(--cor2), var(--cor4));
     font-family: var(--font-header-aside);
     background-color:var(--cor1);
     min-height: 400px;
-    background-image: url("imagens/dev-8.jpg");
+    background: url("imagens/dev-8.jpg");
     min-width: 128px;
     max-width: 1280px;
 }
 header:hover{
-    background-image: url("imagens/dev-15.jpg");
+    background: url("imagens/dev-15.jpg");
+    -webkit-transition: all .4s ease-in;
 }
 header:active{
-    background-image: url("imagens/dev-14.jpg");
+    background: url("imagens/dev-14.jpg");
 }
 header > h1{
     color:white;
@@ -47,6 +53,10 @@ header > h1{
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.384);
     padding-top: 150px;
     
+}
+header > h1:hover{
+    color: red;
+    -webkit-transition: all .4s ease-in;
 }
 nav{
     background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
@@ -58,22 +68,44 @@ nav{
 nav > #foto{
     background-color: transparent;
 }
+nav > #foto:hover{
+    -webkit-transform: scale(1.1);
+    -webkit-transition: all .4s ease-in;
+}
+
 nav > a{
     color:white;
     padding: 5px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 2px;
-    transition-duration: .5s;
-    
-    
+    transition-duration: .4s;
+    display: inline-table;
 }
 nav > a:hover{
-    background-color:var(--cor1);
-    color:var(--cor5);
+   
+    -webkit-transform: scale(1.1);
+    -webkit-transition: all .4s ease;
+}
+
+nav > a:hover{
+    /*background-color:var(--cor1);*/
+     color:red;
 }
 nav > a:active{
-    background-color: var(--cor0);
+    background-color: none;
+}
+nav > #lksobre::before{
+    content: '\1f913\00A0\00A0';
+}
+nav > #lkeasysoft::before{
+    content: '\1F310\00A0\00A0';
+}
+nav > #lkprojectos::before{
+    content: '\1F4C3\00A0\00A0';
+}
+nav > #foto::before{
+    content: '\1F393\00A0\00A0';
 }
 main{
     background-color: white;
@@ -159,32 +191,7 @@ aside a{
     color: var(--cor4);
     color: var(--cor3);
 }
-#galeria{
-    background-color: var(--cor1);
-    margin: 50px 0px 50px 0px;
-    text-align: center;
-    
-
-}
-#galeria > .foto{
-    margin: auto;
-    
-}
-#galeria > #f1{
-    margin-top: 10px;
-}
-aside .foto{
-    
-    width: 200px;
-    height: 200px;
-    border: 1px solid white;
-    border-radius: 10px;
- 
-}
-aside {
-    margin-top: 10px;
-}
-aside  a:hover{
+aside a:hover{
     text-decoration: underline;
 }
 aside a:active{
@@ -198,17 +205,17 @@ aside > ul{
 }
 aside#livros > h3{
     margin: -10px 0px 0px 0px;
+    margin-bottom: 10px;
 }
 aside#livros > h3::before{
-    content: none;
-    content: url("imagens/");
+    content: '';
 }
 aside#livros{
     text-align: center;
     margin: 50px 0px 50px 0px;
     margin: 0px;
     padding: 0px;
-    
+        
 }
 aside#livros p.center{
     display: inline;  
@@ -216,6 +223,7 @@ aside#livros p.center{
     margin: 0px;
     padding: 0px;
     margin: 50px 0px 50px 0px;
+    
 }
 
 aside#livros > img.book{
@@ -225,13 +233,17 @@ aside#livros > img.book{
    margin: 3px;
    padding: 0px;
 }
+aside#livros > img.book:hover{
+    -webkit-transform: scale(1.2);
+    -webkit-transition: all .4s ease-in;
+}
 div.config{
     background-color: var(--cor2);
     margin: 10px;
     padding: 10px;
     padding-bottom: 80%;
     position: relative;
-    border: 1px solid white;
+    border: 1px solid var(--cor3);
     
 }
 
@@ -242,7 +254,7 @@ div.config video{
     width: 90%;
     height: 70%;
     margin-top: 9%;
-    border: 1px solid white;
+    border: 1px solid var(--cor3);
 
 }
 
@@ -254,38 +266,192 @@ aside#video strong{
     color: white;
 }
 
+#galeria{
+    background-color: var(--cor1);
+    margin: 50px 0px 50px 0px;
+    text-align: center;
+}
+#galeria .foto{
+    display: inline-block;
+    margin: auto;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 4);
+    width: 200px;
+    height: 200px;
+    border: 5px solid var(--cor3);
+    margin: 5px;
+    -webkit-transition: all .4s ease-in;
+}
+#galeria .foto:hover{
+    -webkit-transform: scale(1.2);
+}
 
-#f1{ 
-    background-image: url("imagens/rj-red3.jpg");
+#ft1{ 
+    background: url("imagens/rj-red3.jpg");
+    background-position: 100% 100%;
+    background-size: 250px 250px;
+    background-color: #ffffff;
+}
+#ft1:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
     
 }
-#f2{ 
-    background-image: url("imagens/rj-blue.jp");
+#ft1:active{
+    background: url("imagens/ilha-luanda.jpg");
 }
-#f3{
-    background-image: url("imagens/rj-white.jp");
+#ft2{ 
+    background: url("imagens/rj-b2.jpg");
+    background-position: 100% 100%;
+    background-size: 250px 250px;
+    background-color: #ffffff;
 }
-#f4{
-    background-image: url("imagens/rj-pink.jg");
+#ft2:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+    
 }
-#f5{
-    background-image: url("imagens/rj-gray.pg");
+#ft2:active{
+    background: url("imagens/ilha-2.jpg");
 }
-#f6{
-    background-image: url("imagens/rj-f3.jpg");
+#ft3{
+    background:url("imagens/rj-blue-2.jpg");
+    background-position: 100% 100%;
+    background-size: 250px 250px;
+    background-color: #ffffff;
 }
-#f7{
-    background-image: url("imagens/vancor.jp");
+#ft3:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+    
 }
-#f8{
-    background-image: url("imagens/rj-gray2.pg");
+#ft3:active{
+    background: url("imagens/vancor.jpg");
 }
-#f9{
-    background-image: url("imagens/rj-f1.pg");
+#ft4{
+    background: url("imagens/rj-skyblue-2.jpg");
+    background-position: 100% 100%;
+    background-size: 250px 250px;
+    background-color: #ffffff;
 }
-#f10{
-    background-image: url("imagens/rj-blue.jpg");
-
+#ft4:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+    
+}
+#ft4:active{
+    background: url("imagens/pc.jpg");
+}
+#ft5{
+    background: url("imagens/nt1.jpg");
+    background-position: 100% 100%;
+    background-size: 250px 250px;
+    background-color: #ffffff;
+}
+#ft5:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+    
+}
+#ft5:active{
+    background: url("imagens/ps5.jpg");
+}
+#ft6{
+    background: url("imagens/mano-adilson.jpg");
+    background-position: 100% 100%;
+    background-size: 250px 250px;
+    background-color: #ffffff;
+}
+#ft6:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+    
+}
+#ft6:active{
+    background: url("imagens/programming.jpg");
+}
+#ft7{
+    background: url("imagens/mana-valéria.jpg");
+    background-position: 100% 100%;
+    background-size: 250px 250px;
+    background-color: #ffffff;
+}
+#ft7:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+    
+}
+#ft7:active{
+    background: url("imagens/red-red4.jpg");
+}
+#ft8{
+    background: url("imagens/rj-nata.jpg");
+    background-position: 100% 100%;
+    background-size: 250px 250px;
+    background-color: #ffffff;
+}
+#ft8:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+    
+}
+#ft8:active{
+    background: url("imagens/rj-b3.jpg");
+}
+#ft9{
+    background: url("imagens/fada-tieny.jpg");
+    background-position: 100% 100%;
+    background-size: 250px 250px;
+    background-color: #ffffff;
+}
+#ft9:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+    
+}
+#ft9:active{
+    background: url("imagens/rj-blue.jpg");
+}
+#ft10{
+    background: url("imagens/fm3.JPG");
+    background-position: 100% 100%;
+    background-size: 250px 250px;
+    background-color: #ffffff;
+}
+#ft10:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+    
+}
+#ft10:active{
+    background: url("imagens/rj-b1.jpg");
+}
+#ft11{
+    background: url("imagens/fm2.JPG");
+    background-position: 100% 100%;
+    background-size: 250px 250px;
+    background-color: #ffffff;
+}
+#ft11:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+    
+}
+#ft11:active{
+    background: url("imagens/rj-gray2.jpg");
+}
+#ft12{
+    background: url("imagens/fm.JPG");
+    background-position: 100% 100%;
+    background-size: 250px 250px;
+    background-color: #ffffff;
+}
+#ft12:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+    
+}
+#ft12:active{
+    background: url("imagens/rj-white.jpg");
 }
 footer{
     background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
