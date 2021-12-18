@@ -28,7 +28,17 @@ body{
 a.externo::before{
     content: '\00A0\1f517';
 }
-
+div#title{
+    text-align: center;
+    background-color: var(--cor5);
+    padding: 20px;
+    color: white;
+    min-width: 128px;
+    max-width: 1280px;
+}
+div#title:hover{
+    color: red;
+}
 header{
     background: linear-gradient(to bottom, var(--cor2), var(--cor4));
     font-family: var(--font-header-aside);
@@ -37,6 +47,7 @@ header{
     background: url("imagens/dev-8.jpg");
     min-width: 128px;
     max-width: 1280px;
+    margin: auto;
 }
 header:hover{
     background: url("imagens/dev-15.jpg");
@@ -63,7 +74,8 @@ nav{
     padding: 20px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
     font-family: var(--font-principal);
-    
+    min-width: 128px;
+    max-width: 1280px;
 }
 nav > #foto{
     background-color: transparent;

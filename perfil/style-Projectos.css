@@ -28,6 +28,18 @@ body{
 a.externo::before{
     content: '\00A0\1f517';
 }
+div#title{
+    text-align: center;
+    background: linear-gradient(to bottom, var(--cor5), var(--cor4));
+    padding: 20px;
+    color: white;
+    min-width: 128px;
+    max-width: 1280px;
+}
+div#title:hover{
+    color: red;
+    -webkit-transition: all .4s ease-in;
+}
 header{
     font-family: var(--font-header-aside);
     min-height: 400px;
@@ -35,10 +47,12 @@ header{
     background: url("imagens/dev-5.jpg");
     min-width: 128px;
     max-width: 1280px;
-    -webkit-transition: all .4s ease-in;
+    margin: auto;
+    
 }
 header:hover{
     background: url("imagens/dev-4.jpg");
+    -webkit-transition: all .4s ease-in;
 }
 header:active{
     background: url("imagens/dev-7.jpg");
@@ -57,6 +71,7 @@ header > h1{
     font-weight: normal;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.384);
     padding-top: 150px;
+    
 }
 header > h1:hover{
     color: red;
@@ -64,13 +79,14 @@ header > h1:hover{
 }
 nav{
     font-family: var(--font-principal);
-    background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
+    background: linear-gradient(to bottom, var(--cor4), var(--cor5));
     padding: 20px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
-    
+    min-width: 128px;
+    max-width: 1280px;
 }
 nav > #foto{
-    background-color: transparent;
+    background: transparent;
     
 }
 nav > #foto:hover{
