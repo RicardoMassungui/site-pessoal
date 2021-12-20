@@ -20,8 +20,12 @@
 body{
     background-color:#aee0ff;
 }
+body hr{
+    min-width: 128px;
+    max-width: 1280px;
+}
 @media only screen and (max-width: 510px) {
-    nav a{
+    nav > a{
         width: 100%;
     }
 }
@@ -40,23 +44,24 @@ div#title:hover{
     color: red;
     -webkit-transition: all .4s ease-in;
 }
+div > img#more{
+    margin-right: 612px;
+}
 header{
     font-family: var(--font-header-aside);
     min-height: 400px;
     background: linear-gradient(to bottom, var(--cor2), var(--cor4));
-    background: url("imagens/dev-5.jpg");
+    background: url("imagens/dev-13.jpg");
     min-width: 128px;
     max-width: 1280px;
     margin: auto;
-    
 }
 header:hover{
-    background: url("imagens/dev-4.jpg");
+    background: url("imagens/dev-11.jpg");
     -webkit-transition: all .4s ease-in;
 }
 header:active{
-    background: url("imagens/dev-7.jpg");
-    -webkit-transition: all .4s ease-in;
+    background: url("imagens/dev-12.jpg");
 }
 body > hr{
   border-left: 0px;
@@ -72,7 +77,6 @@ header > h1{
     font-weight: normal;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.384);
     padding-top: 150px;
-    
 }
 header > h1:hover{
     color: red;
@@ -100,9 +104,11 @@ nav > a{
     padding: 5px;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 2px;
+    border-radius: 10px;
     transition-duration: .4s;
-    display: inline-table;
+    margin-top:-20px;
+    display:inline-table;
+    margin: 0.0px;
 }
 nav > a:hover{
    
@@ -115,16 +121,22 @@ nav > a:hover{
      color:red;
 }
 nav > a:active{
-    background-color: none;
+    background-color: transparent;
 }
 nav > #lksobre::before{
     content: '\1f913\00A0\00A0';
 }
 nav > #lkeasysoft::before{
-    content: '\1F310\00A0\00A0';
+    content: '\1F3E2\00A0\00A0';
+}
+nav > #lkeasysoft{
+    background-color: transparent;
 }
 nav > #lkprojectos::before{
     content: '\1F4C3\00A0\00A0';
+}
+nav > #lkredes::before{
+    content: '\1F310\00A0\00A0';
 }
 nav > #foto::before{
     content: '\1F393\00A0\00A0';
@@ -148,6 +160,11 @@ article  > h2{
     font-weight: normal;
     color: var(--cor4);
 }
+article > h2:hover{
+    color: var(--cor1);
+    -webkit-transform: scale(1.1);
+    -webkit-transition: all .4s ease;
+}
 article p{
     font-family: var(--font-principal);
     text-indent: 30px;
@@ -159,14 +176,23 @@ article p{
 }
 article > img{
     
-    padding: 20px;
+   padding: 10px;
    display: block;
    margin: auto;
-   margin-bottom: 50px;
+   margin-bottom: 0px;
+}
+article > img:hover{
+    -webkit-transform: scale(1.1);
+    -webkit-transition: all .4s ease;
 }
 article strong{
     font-weight: bold;
     color: var(--cor4);
+}
+article > ol{
+    list-style-type: '\00A0\00A0';
+    list-style-position: inside;
+    columns: 1;
 }
 aside{
     margin-top: 50px;
@@ -192,12 +218,15 @@ aside > h3{
     font-weight: normal;
     font-size: 1.5em;
     text-align: center;
-    margin-bottom: 10px;
 }
 aside > h3::before{
-    content: url("imagens/especificacoes-04.png");
+    content: url("imagens/contato-2.png");
     padding: 10px;
     text-align: center;
+}
+aside > h3:hover{
+     color: red;
+    -webkit-transition: all .4s ease;
 }
 aside > #t3::before{
    
@@ -221,6 +250,10 @@ aside > ul{
     columns: 1;
     list-style: none;
 }
+aside img.seguir:hover{
+    -webkit-transform: scale(1.1);
+    -webkit-transition: all .4s ease;
+}
 #galeria{
     background-color: var(--cor1);
     margin: 50px 0px 50px 0px;
@@ -232,24 +265,13 @@ aside > ul{
     margin: auto;
 
 }
-aside img{
-    width:200px;
-    height: 200px;
-    border-radius: 10px;
-    border: 5px solid var(--cor3);
-    display: inline-table;
-    margin-top: 5px;
-    
-}
-aside img:hover{
-    -webkit-transform: scale(1.2);
-    -webkit-transition: all .4s ease-in;
-}
+
 #galeria > #f1{
     margin-top: 10px;
 }
 #f1{ 
     background-image: url("imagens/contador-inteligente.pn");
+    
 }
 #f2{ 
     background-image: url("imagens/edom-calculator.pn");
@@ -277,7 +299,6 @@ aside img:hover{
 }
 #f10{
     background-image: url("imagens/rj-blue.jpg");
-   
 }
 #f11{
     background-image: url("imagens/mano\ adilson.jpg");
