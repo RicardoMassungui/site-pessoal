@@ -19,7 +19,7 @@
 }
 
 body{
-    background-color:var(--cor0);
+    background-color:#aee0ff;
 }
 @media only screen and (max-width: 610px) {
     nav a{
