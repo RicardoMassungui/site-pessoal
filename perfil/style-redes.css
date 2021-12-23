@@ -39,6 +39,7 @@ div#title{
     color: white;
     min-width: 128px;
     max-width: 1280px;
+    margin: auto;
 }
 div#title:hover{
     color: red;
@@ -312,6 +313,7 @@ footer{
     font-size: 0.8em;
     min-width: 128px;
     max-width: 1280px;
+    margin: auto;
 
 }
 
