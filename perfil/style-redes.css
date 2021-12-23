@@ -65,9 +65,10 @@ header:hover{
 header:active{
     background: url("imagens/dev-23.png");
 }
-body > hr{
-  border-left: 0px;
-  border-right: 0px;
+body hr{
+    min-width: 128px;
+    max-width: 1280px;
+    margin: auto;
 }
 header > img{
     width: 100%;
