@@ -23,6 +23,7 @@ body{
 body hr{
     min-width: 128px;
     max-width: 1280px;
+    margin: auto;
 }
 @media only screen and (max-width: 610px) {
     nav > a{

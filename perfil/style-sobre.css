@@ -58,10 +58,11 @@ header:hover{
 header:active{
     background: url("imagens/dev-14.jpg");
 }
-body > hr{
-    border-left: 0px;
-    border-right: 0px;
-  }
+body hr{
+    min-width: 128px;
+    max-width: 1280px;
+    margin: auto;
+}
 header > h1{
     color:white;
     text-align: center;

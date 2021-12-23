@@ -73,6 +73,11 @@ header > h1:hover{
     color: red;
     -webkit-transition: all .4s ease-in;
 }
+body hr{
+    min-width: 128px;
+    max-width: 1280px;
+    margin: auto;
+}
 nav{
     background: linear-gradient(to bottom, var(--cor4), var(--cor5));
     padding: 20px;
