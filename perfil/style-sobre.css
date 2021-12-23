@@ -35,6 +35,7 @@ div#title{
     color: white;
     min-width: 128px;
     max-width: 1280px;
+    margin: auto;
 }
 div#title:hover{
     color: red;
@@ -81,6 +82,7 @@ nav{
     font-family: var(--font-principal);
     min-width: 128px;
     max-width: 1280px;
+    margin: auto;
 }
 nav > #foto{
     background: transparent;
@@ -482,7 +484,9 @@ footer{
     background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
     font-size: 0.8em;
     min-width: 128px;
-    max-width: 1280px;  
+    max-width: 1280px;
+    margin: auto;
+      
 }
 
 footer > p > a{
