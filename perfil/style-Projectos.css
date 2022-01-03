@@ -207,6 +207,9 @@ aside > h3::before{
     padding: 10px;
     text-align: center;
 }
+aside > h3:hover{
+    color: red;
+}
 aside > #t3::before{
    
     content: url("imagens/contato.png");

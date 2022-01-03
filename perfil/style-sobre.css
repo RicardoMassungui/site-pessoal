@@ -240,10 +240,9 @@ aside#livros > h3::before{
 }
 aside#livros{
     text-align: center;
-    margin: 50px 0px 50px 0px;
-    margin: 0px;
+    margin: 50px 0px 40px 0px;
     padding: 0px;
-        
+
 }
 aside#livros p.center{
     display: inline;  

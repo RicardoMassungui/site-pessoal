@@ -255,7 +255,7 @@ aside > ul{
     list-style: none;
     text-align: center;
 }
-aside img.seguir:hover{
+aside .seguir:hover{
     -webkit-transform: scale(1.1);
     -webkit-transition: all .4s ease;
 }
