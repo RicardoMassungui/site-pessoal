@@ -264,7 +264,7 @@ aside#livros > img.book:hover{
     -webkit-transform: scale(1.2);
     -webkit-transition: all .4s ease-in;
 }
-div.config{
+/*div.config{
     background-color: var(--cor2);
     margin: 10px;
     padding: 10px;
@@ -284,11 +284,27 @@ div.config video{
     border: 1px solid var(--cor3);
 
 }
-
+*/
+div.video{
+    background-color: var(--cor4);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
 aside#video p{
     text-align: center;
-    
-}
+ }   
+
 aside#video strong{
     color: white;
 }
