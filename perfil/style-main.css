@@ -165,7 +165,6 @@ main{
     background-color: white;
     min-width: 100px;
     max-width: 1000px;
-    height: 900px;
     margin: auto;
     padding: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
@@ -311,12 +310,12 @@ aside#bio{
     text-indent: 1.8em;
 }
 aside#bio p#pbio{
-    float: left;
-    max-width: 500px;
+    margin: auto;
+    
 }
 aside#bio img#imgbio{
-    float: right;
-    display: block;
+    
+    
 }
 aside > h3{
     background-color: var(--cor4) ;
