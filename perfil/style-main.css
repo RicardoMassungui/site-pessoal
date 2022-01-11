@@ -19,7 +19,7 @@
 }
 
 body{
-    background-color:#aee0ff;
+    background: linear-gradient(to bottom, var(--cor0), var(--cor1));
 }
 @media only screen and (max-width: 610px) {
     nav a{
@@ -37,12 +37,39 @@ div#title{
     min-width: 128px;
     max-width: 1280px;
     margin: auto;
+    
 }
+
 div#title:hover{
     color: red;
     -webkit-transition: all .4s ease-in;
 }
-header{
+div#data p#emonji{
+    float: right;
+    background: none;
+    padding: 0px;
+    border-radius: 0px;
+}
+div#data{
+    float: right;
+    color: white;
+    background:linear-gradient(to top, var(--cor2), var(--cor1));
+    padding: 5px;
+    border-radius: 5px;
+}
+#newdiv{
+    font-family: var(--font-header-aside);
+   background: linear-gradient(to bottom, var(--cor2), var(--cor4));
+   /*background: url("imagens/dev-8.jpg");*/
+   min-width: 128px;
+   max-width: 1280px;
+   margin: auto;
+}
+#newdiv img{
+   width: 100%;
+}
+
+/*header{
     background-color: linear-gradient(to bottom, var(--cor2), var(--cor4));
     font-family: var(--font-header-aside);
     background-color:var(--cor1);
@@ -72,7 +99,7 @@ header > h1{
 header > h1:hover{
     color: red;
     -webkit-transition: all .4s ease-in;
-}
+}*/
 body hr{
     min-width: 128px;
     max-width: 1280px;
@@ -80,7 +107,7 @@ body hr{
 }
 nav{
     background: linear-gradient(to bottom, var(--cor4), var(--cor5));
-    padding: 20px;
+    padding: 25px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
     font-family: var(--font-principal);
     min-width: 128px;
@@ -138,6 +165,7 @@ main{
     background-color: white;
     min-width: 100px;
     max-width: 1000px;
+    height: 900px;
     margin: auto;
     padding: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
@@ -170,19 +198,27 @@ article p{
     line-height: 1.8em;
 
 }
-article > img{
+article a{
+    font-weight: bold;
+    color: var(--cor4);
+    text-decoration: none;
+}
+article a:hover{
+    text-decoration: underline;
+}
+/*article > img{
    padding: 0px;
    display: block;
    margin: auto;
    margin-bottom: 50px;
    margin-top: 10px;
    border: 1px solid var(--cor5);
-}
+}*/
 article strong{
     font-weight: bold;
     color: var(--cor4);
 }
-div#ifundo > img#iperfil{
+/*div#ifundo > img#iperfil{
     content: url("imagens/rj-red3.jpg");
     width: 200px;
     height: 200px;
@@ -214,10 +250,49 @@ div#ifundo{
 div#ifundo:hover{
   background-image: url("imagens/rj-fundo.jpg");
   -webkit-transition: all .4s ease-in;
+}*/
+div#ifundo{
+    min-width: 100px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 20%;
+    position: relative;
 }
-
+div#ifundo > div#iperfil{
+    position: absolute;
+    top: 76%;
+    left: 40%;
+    width: 20%;
+    height: 20%;
+    min-height: 20px;
+    max-width: 200px;
+    min-height: 20px;
+    max-height: 200px;
+    margin: auto;
+    border-radius: 100px;
+    
+}
+div#ifundo  img#fundo{
+   min-width: 100px;
+   max-width: 1000px;
+   min-height: 100px;
+   max-height: 1000px;
+   width: 100%;
+   margin: auto;
+   border: 2px solid var(--cor5);
+}
+div#ifundo div#iperfil img#perfil{
+   min-width: 20px;
+   max-width: 200px;
+   min-height: 20px;
+   max-height: 200px;
+   border-radius: 100px;
+   width: 100%;
+   margin: auto;
+   border: 2px solid var(--cor5);
+} 
 aside{
-    background-color:var(--cor1);
+    background: linear-gradient(to bottom, var(--cor1), var(--cor2));
     padding: 10px;
     border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.192);
@@ -225,6 +300,23 @@ aside{
     font-weight: normal;
     text-align: justify;
     text-indent: 1.8em;
+}
+aside#bio{
+    background: white;
+    padding: 10px;
+    box-shadow: none;
+    font-family: var(--font-principal);
+    font-weight: normal;
+    text-align: justify;
+    text-indent: 1.8em;
+}
+aside#bio p#pbio{
+    float: left;
+    max-width: 500px;
+}
+aside#bio img#imgbio{
+    float: right;
+    display: block;
 }
 aside > h3{
     background-color: var(--cor4) ;
@@ -291,13 +383,19 @@ footer aside  p{
 }
 
 footer aside a{
-    color: var(--cor3);
+    color: var(--cor4);
     font-weight: bolder;
     text-decoration: none;
     
 }
+footer aside img:hover{
+    -webkit-transform: scale(1.1);
+    -webkit-transition: all .4s ease-in
+}
 footer a:hover{
     text-decoration: underline;
-    color: var(--cor4);
+    color: var(--cor5);
+    
 }
+
 

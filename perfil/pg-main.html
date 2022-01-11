@@ -8,32 +8,69 @@
     <title>Ricardo Massungui</title>
     
 </head>
-<body>
-        <nav>
-            
+<body  onmouseout="sair()" >
+   
+        <div id="data">
+            <p id="emonji">&#x231A;</p>
+            <script src="data.js"></script> |
+            <script src="hora.js"></script>
+             
+         </div>        
+        
+         <nav>
+           
+                
             <a id="foto" href="https://github.com/ricardomassungui" target="_blank" rel="external"><img src="imagens/rj-t-200.png" alt="Ricardo Massungui"></a>
             <a id="lksobre" href="pg-sobre.html" target="_self" rel="next">Sobre</a>
             <a id="lkprojectos" href="pg-projectos.html" target="_self" rel="next">Projectos</a>
             <a id = "lkredes" href="pg-redes.html" target="_self" rel="next">Redes</a>
             <a id="lkeasysoft" href="pg-easysoft.html" target="_self" rel="next"><img src="imagens/easysoft-2.png" alt="easysoft-Technology"></a>
+           
+             
+           
         
         </nav>
+             
         <hr>
-        <header>
+         <!--<header>
+          </header>-->
+          <div id="newdiv" >
             
-        </header>
+            <img  src="imagens/dev-9.jpg" alt="developer" id="f1">
+            
+            <!--<button class="btslider" onclick="troca(-1)"><</button>
+            <div id="dvload">
+                 <div id="dvbarra"></div>
+            </div>
+            <button class="btslider" onclick="troca(1)">></button>-->
+          </div>
         <hr>
         
-        <div id="title"><h1>&#x1F393; <img src="imagens/rj-t-200.png" alt="ricardo-massungui"></h1></div>
-    <main>
+        <div id="title"><h1>&#x1F393; <img src="imagens/rj-t-200.png" alt="ricardo-massungui"></h1>
+        </div>
+    <main onmousemove="mover()" onclick="clicar()">
         
     <article>
         
-        <h2>&#x1f913;Quem eu sou?&#x1f4bb;</h2>   
+        <h2>&#x1f913;Quem Eu Sou?&#x1f4bb;</h2>   
         <div id="ifundo">
-                <img id="iperfil"  src="imagens/rj-skyblue-2.jpg">
+                <img id="fundo" src="imagens/rj-fundo-2.jpg" alt="ricardo-massungui" onmousemove="moverf()" onmouseout="sairf()" >
+        <div id="iperfil">
+            <img id="perfil"  src="imagens/r9-9.png" id="f3" onmousemove="moverp()" onmouseout="sairp()" onclick="clicarp()">
         </div>
-        <p><strong>&#x1f596;Olá!&#x1f913;Ricardo João Massungui</strong> é o meu nome, Estou com <strong>17 anos de idade</strong> e sou <strong>estudante Médio</strong> de <strong>Informática-Técnica&#x1f4bb;</strong>. Onde há a caminho de três anos afim de se especializar em <strong>programação</strong> programo e desenvolvo <strong>appwebs</strong> comercias e educacionais dinámicos, em tecnologias <em>(front-end)</em> como <strong>HTML5, CSS3, Javascript</strong> e <em>(back-end)</em><strong> PHP, PYTHON, MYSQL</strong>. Tudo isso, afim de obter um nivél de profissionalismo capaz de suprir com as necessidades desejadas pelos os <strong>usuários</strong> com o intuíto de resolver as mesmas de maneira eficaz, confiavél, e segura acima de tudo.</p><br>
+        </div>
+        
+        <aside id="bio">
+            
+            <img class="imgbio" src="imagens/laravel.png" alt="laravel-framework" >
+            <img class="imgbio" src="imagens/node.png" alt="node-js" >
+            <img class="imgbio" src="imagens/techs-webs.png" alt="tech-web" >
+
+            <p id="pbio"><strong>&#x1f596;Olá!&#x1f913;<a href="https://github.com/ricardomassungui"  target="_blank" rel="external">Ricardo João Massungui</a></strong> é o meu nome, Estou com <strong>17 anos de idade</strong> e sou <strong>estudante Médio</strong> de <strong>Informática-Técnica&#x1f4bb;</strong>. Onde há a caminho de três anos afim de se especializar em <strong>programação</strong> programo e desenvolvo <strong>appwebs</strong> comercias e educacionais dinámicos, em tecnologias <em>(front-end)</em> como <strong>HTML5, CSS3, Javascript</strong> e <em>(back-end)</em><strong> PHP, MYSQL</strong> com algumas das suas mais populares bibliotecas de cada tecnologia antes citada. Tudo isso, afim de obter um nivél de profissionalismo capaz de suprir com as necessidades desejadas pelos os <strong>usuários</strong> com o intuíto de resolver as mesmas de maneira eficaz, confiavél, e segura acima de tudo.</p>
+        </aside>
+        <div id="acesso">
+
+        </div>
     </article>
 
 </main>
@@ -43,12 +80,12 @@
             <ul>
                 <li>
                     <p>
-                        <a class="externo" href="https://www.cursoemvideo.com/matricule-se-agora/?gclid=Cj0KCQiA2ZCOBhDiARIsAMRfv9IB3OMha3Fy6bqygtfL7gGCQ3k1sYdHwsHZ4Pe46f2ByHxkb32zR88aAqNyEALw_wcB/" target="_blank" rel="external"> <img src="imagens/cev-2.png" alt="CursoemVideo"> CursoemVideo </a>Cadastra-se já na plataforma onde aprender tecnologia é mais fácil que beber água, com o professor de todos os gafanhotos de TI<a class="externo" href="https://github.com/gustavoguanabara.github.io/" target="_blank" rel="external">Gustavo Guanabara</a>. E enriqueça o seu curriculum em um só lugar com certificação e confiabilidade e acima de tudo profissionalismo sem sair de casa.  <q>aprender Ti em uma didática simples, prática, profissional á distância e gratuita nunca foi tão fácil</q>.
+                        <a class="externo" href="https://www.cursoemvideo.com/matricule-se-agora/?gclid=Cj0KCQiA2ZCOBhDiARIsAMRfv9IB3OMha3Fy6bqygtfL7gGCQ3k1sYdHwsHZ4Pe46f2ByHxkb32zR88aAqNyEALw_wcB/" target="_blank" rel="external"> <img src="imagens/cev-2.png" alt="CursoemVideo"> CursoemVideo </a> Cadastra-se já na plataforma onde aprender tecnologia é mais fácil que beber água, com o professor de todos os gafanhotos de TI<a class="externo" href="https://github.com/gustavoguanabara.github.io/" target="_blank" rel="external">Gustavo Guanabara</a>. E enriqueça o seu curriculum em um só lugar com certificação e confiabilidade e acima de tudo profissionalismo sem sair de casa.  <q>aprender Ti em uma didática simples, prática, profissional á distância e gratuita nunca foi tão fácil</q>.
                     </p>
                 </li>
                 <li>
                     <p>
-                        <a class="externo" href="https://www.estudonauta.com/?_ga=2.120255496.1455534323.1640545445-1020178265.1640545445/" target="_blank" rel="external"> <img src="imagens/logo-estudonauta-2.png" alt="CursoemVideo"> Estudonauta </a> Cadastra-se já na plataforma educacional onde aprender tecnologia é mais fácil que respirar a um preço acessivél para qualquer um, com o professor de todos os gafanhotos de TI <a class="externo" href="https://github.com/gustavoguanabara.github.io/" target="_blank" rel="external">Gustavo Guanabara</a>. E fortaleça ainda mais o seu curriculum de modo aprimorando os seus conhecimentos de TI profissionalmente sem sair de casa. <q>aprender TI em uma didática simples, prática, profissional á distância e barato nunca foi tão fácil</q>.
+                        <a class="externo" href="https://www.estudonauta.com/?_ga=2.120255496.1455534323.1640545445-1020178265.1640545445/" target="_blank" rel="external"> <img src="imagens/logo-estudonauta-2.png" alt="CursoemVideo"> Estudonauta </a>  Cadastra-se já na plataforma educacional onde aprender tecnologia é mais fácil que respirar a um preço acessivél para qualquer um, com o professor de todos os gafanhotos de TI <a class="externo" href="https://github.com/gustavoguanabara.github.io/" target="_blank" rel="external">Gustavo Guanabara</a>. E fortaleça ainda mais o seu curriculum de modo aprimorando os seus conhecimentos de TI profissionalmente sem sair de casa. <q>aprender TI em uma didática simples, prática, profissional á distância e barato nunca foi tão fácil</q>.
                     </p>
                 </li>
                 <!--<li>
@@ -62,5 +99,6 @@
         <p>&copy; 2021 Perfil Académico, Feito na<a href="https://github.com/easysoft-rm" target="_blank" rel="external">EasySoft</a>By<a href="https://github.com/ricardomassungui" target="_blank" rel="external">Ricardo Massungui.</a></p>
     </footer>
     <script src="pg-main.js"></script>
+    <script src="pg-main_eventos.js"></script>
 </body>
 </html>

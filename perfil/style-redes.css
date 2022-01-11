@@ -18,7 +18,7 @@
 }
 
 body{
-    background-color:#aee0ff;
+    background: linear-gradient(to bottom, var(--cor0), var(--cor1));
 }
 body hr{
     min-width: 128px;
@@ -201,7 +201,7 @@ article > ol{
 aside{
     margin-top: 50px;
     margin-bottom: 50px;
-    background-color:var(--cor1);
+    background: linear-gradient(to bottom, var(--cor1), var(--cor2));
     padding: 10px;
     border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.192);

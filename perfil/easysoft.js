@@ -1,9 +1,9 @@
-function move(){
-   let mover = document.querySelector('img#troca').src = ""
+function mover(){
+   let evento = document.querySelector('img#f1').src = "imagens/s8.jpg"
 }
-function clica(){
-    let mover = document.querySelector('img#troca').src = ""
+ function sair(){
+    let evento = document.querySelector('img#f1').src = "imagens/s6.jpg"
  }
- function sai(){
-    let mover = document.querySelector('img#troca').src = ""
- }
+ function clicar(){
+   let evento = document.querySelector('img#f1').src = "imagens/s7.jpg"
+}

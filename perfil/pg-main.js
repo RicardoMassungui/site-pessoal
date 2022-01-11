@@ -1,17 +1,15 @@
-
+// imagens da div slider
 function mover(){
-    let mouse = window.document.querySelector('div#iperfil')
-    mouse.src = "imagens/rj-blue-2.jpg"
+   let evento = document.querySelector('img#f1')
+    evento.src='imagens/dev-18.jpg'
+
 }
 function sair(){
-    let mouse = window.document.querySelector('img#trocar')
-    mouse.src = "imagens/rj-red3.jpg"
+    let evento = document.querySelector('img#f1')
+    evento.src='imagens/dev-9.jpg'
 }
+
 function clicar(){
-    let mouse = window.document.querySelector('img#trocar')
-    mouse.src = "imagens/rj-blue-2.jpg"
-}
-function subir(){
-    let mouse = window.document.querySelector('img#trocar')
-    mouse.src = "imagens/rj-gray2.jpg"
+    let evento = document.querySelector('img#f1')
+    evento.src='imagens/dev-19.jpg'
 }

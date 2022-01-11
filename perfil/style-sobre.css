@@ -8,7 +8,7 @@
     --cor2:#077fca;
     --cor3:#1b5881;
     --cor4:#0a4066;
-    --cor5:#05263d;;
+    --cor5:#05263d;
     
     
 }
@@ -18,7 +18,7 @@
 }
 
 body{
-    background-color:#aee0ff;
+    background: linear-gradient(to bottom, var(--cor0), var(--cor1));
 }
 @media only screen and (max-width: 610px) {
     nav a{
@@ -177,7 +177,7 @@ article strong{
 aside{
     margin-top: 50px;
     margin-bottom: 50px;
-    background-color:var(--cor1);
+    background: linear-gradient(to bottom, var(--cor1), var(--cor2));
     padding: 10px;
     border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.192);
@@ -186,6 +186,7 @@ aside{
     text-align: justify;
     text-indent: 1.8em;
     list-style: none;
+   
 }
 
 aside > h3{
@@ -216,14 +217,15 @@ aside > .video::before{
 aside a{
     font-weight: bold;
     text-decoration: none;
-    color: var(--cor4);
-    color: var(--cor3);
+    color: white;
+    box-shadow: 3px 3px 8px #05263d10;
 }
 aside a:hover{
     text-decoration: underline;
+    color: darkred;
 }
 aside a:active{
-    color: var(--cor1);
+    color: red;
 }
 aside > ul{
     list-style-type: '\00A0\00A0';
@@ -242,7 +244,7 @@ aside#livros{
     text-align: center;
     margin: 50px 0px 40px 0px;
     padding: 0px;
-
+    padding-bottom: 20px;
 }
 aside#livros p.center{
     display: inline;  
@@ -259,6 +261,8 @@ aside#livros > img.book{
    margin: 50px 0px 50px 0px;
    margin: 3px;
    padding: 0px;
+   box-shadow: 3px 3px 8px #05263d86;
+   margin-top: 10px;
 }
 aside#livros > img.book:hover{
     -webkit-transform: scale(1.2);
@@ -286,7 +290,7 @@ div.config video{
 }
 */
 div.video{
-    background-color: var(--cor4);
+    background: linear-gradient(to bottom, var(--cor3), var(--cor4));
     margin: 0px -20px 30px -20px;
     padding: 20px;
     padding-bottom: 58%;
