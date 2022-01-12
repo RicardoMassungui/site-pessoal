@@ -309,13 +309,11 @@ aside#bio{
     text-align: justify;
     text-indent: 1.8em;
 }
-aside#bio p#pbio{
-    margin: auto;
-    
+aside#bio ul{
+    text-align: center;
 }
-aside#bio img#imgbio{
-    
-    
+aside#bio ul p{
+    text-align: center;
 }
 aside > h3{
     background-color: var(--cor4) ;
