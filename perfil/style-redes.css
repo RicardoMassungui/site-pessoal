@@ -42,6 +42,37 @@ div#title{
     max-width: 1280px;
     margin: auto;
 }
+div#data p#emonji{
+    float: right;
+    background: none;
+    padding: 0px;
+    border-radius: 0px;
+}
+div#data{
+    float: right;
+    color: white;
+    background:linear-gradient(to top, var(--cor2), var(--cor1));
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+div#data input#rel{
+    color: black;
+    width: 55px;
+    
+}
+#newdiv{
+    font-family: var(--font-header-aside);
+   background: linear-gradient(to bottom, var(--cor2), var(--cor4));
+   /*background: url("imagens/dev-8.jpg");*/
+   min-width: 128px;
+   max-width: 1280px;
+   margin: auto;
+}
+#newdiv img{
+   width: 100%;
+}
+
 div#title:hover{
     color: red;
     -webkit-transition: all .4s ease-in;

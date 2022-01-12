@@ -56,6 +56,12 @@ div#data{
     background:linear-gradient(to top, var(--cor2), var(--cor1));
     padding: 5px;
     border-radius: 5px;
+    
+}
+div#data input#rel{
+    color: black;
+    width: 55px;
+    
 }
 #newdiv{
     font-family: var(--font-header-aside);
