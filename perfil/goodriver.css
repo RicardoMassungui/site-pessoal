@@ -7,7 +7,7 @@ h1{
     
 }
 body{
-    background-color: rgb(0, 89, 255);
+    background: linear-gradient(to bottom, rgb(5, 88, 212), rgb(14, 61, 192));
     color:white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
@@ -32,4 +32,11 @@ p{
     margin-top: 20px;
     margin-bottom: 20px;
 
+}
+form#form p{
+    font-size: 1em;
+}
+form#form legend{
+    font-weight: bold;
+    text-align: center;
 }

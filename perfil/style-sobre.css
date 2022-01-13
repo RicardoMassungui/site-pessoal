@@ -37,19 +37,17 @@ div#title{
     max-width: 1280px;
     margin: auto;
 }
-div#data p#emonji{
-    float: right;
-    background: none;
-    padding: 0px;
-    border-radius: 0px;
-}
 div#data{
     float: right;
     color: white;
-    background:linear-gradient(to top, var(--cor2), var(--cor1));
+    /*background:linear-gradient(to top, var(--cor2), var(--cor1));*/
     padding: 5px;
     border-radius: 5px;
+   
     
+}
+div#data div#dmy{
+ float: right;
 }
 div#data input#rel{
     color: black;
@@ -269,7 +267,7 @@ aside#livros > h3{
     margin-bottom: 10px;
 }
 aside#livros > h3::before{
-    content: '';
+    content: url('imagens/livros.png');
 }
 aside#livros{
     text-align: center;
@@ -364,7 +362,7 @@ aside#video strong{
 }
 
 #ft1{ 
-    background: url("imagens/rj-red3.jpg");
+    background: url("imagens/rj-5.jpg");
     background-position: 100% 100%;
     background-size: 250px 250px;
     background-color: #ffffff;
@@ -375,10 +373,10 @@ aside#video strong{
     
 }
 #ft1:active{
-    background: url("imagens/ilha-luanda.jpg");
+    background: url("imagens/mana-valéria.jpg");
 }
 #ft2{ 
-    background: url("imagens/rj-b2.jpg");
+    background: url("imagens/rj-2.jpg");
     background-position: 100% 100%;
     background-size: 250px 250px;
     background-color: #ffffff;
@@ -389,10 +387,10 @@ aside#video strong{
     
 }
 #ft2:active{
-    background: url("imagens/ilha-2.jpg");
+    background: url("imagens/mana-valéria.jpg");
 }
 #ft3{
-    background:url("imagens/rj-blue-2.jpg");
+    background:url("imagens/rj-gray.png");
     background-position: 100% 100%;
     background-size: 250px 250px;
     background-color: #ffffff;
@@ -406,7 +404,7 @@ aside#video strong{
     background: url("imagens/vancor.jpg");
 }
 #ft4{
-    background: url("imagens/rj-skyblue-2.jpg");
+    background: url("imagens/rj-8.jpg");
     background-position: 100% 100%;
     background-size: 250px 250px;
     background-color: #ffffff;
@@ -417,10 +415,10 @@ aside#video strong{
     
 }
 #ft4:active{
-    background: url("imagens/pc.jpg");
+    background: url("imagens/fm2.JPG");
 }
 #ft5{
-    background: url("imagens/nt1.jpg");
+    background: url("imagens/rj-b2.jpg");
     background-position: 100% 100%;
     background-size: 250px 250px;
     background-color: #ffffff;
@@ -431,10 +429,10 @@ aside#video strong{
     
 }
 #ft5:active{
-    background: url("imagens/ps5.jpg");
+    background: url("imagens/fm.JPG");
 }
 #ft6{
-    background: url("imagens/mano-adilson.jpg");
+    background: url("imagens/rj-1.jpg");
     background-position: 100% 100%;
     background-size: 250px 250px;
     background-color: #ffffff;
@@ -448,7 +446,7 @@ aside#video strong{
     background: url("imagens/programming.jpg");
 }
 #ft7{
-    background: url("imagens/mana-valéria.jpg");
+    background: url("imagens/ricardo-fp_2.png");
     background-position: 100% 100%;
     background-size: 250px 250px;
     background-color: #ffffff;
@@ -459,10 +457,10 @@ aside#video strong{
     
 }
 #ft7:active{
-    background: url("imagens/red-red4.jpg");
+    background: url("imagens/rj-green2.jpg");
 }
 #ft8{
-    background: url("imagens/rj-nata.jpg");
+    background: url("imagens/ricardo-fp.png");
     background-position: 100% 100%;
     background-size: 250px 250px;
     background-color: #ffffff;
@@ -476,7 +474,7 @@ aside#video strong{
     background: url("imagens/rj-b3.jpg");
 }
 #ft9{
-    background: url("imagens/fada-tieny.jpg");
+    background: url("imagens/rj-4.jpg");
     background-position: 100% 100%;
     background-size: 250px 250px;
     background-color: #ffffff;
@@ -490,7 +488,7 @@ aside#video strong{
     background: url("imagens/rj-blue.jpg");
 }
 #ft10{
-    background: url("imagens/fm3.JPG");
+    background: url("imagens/rj-7.jpg");
     background-position: 100% 100%;
     background-size: 250px 250px;
     background-color: #ffffff;
@@ -501,10 +499,10 @@ aside#video strong{
     
 }
 #ft10:active{
-    background: url("imagens/rj-b1.jpg");
+    background: url("imagens/ps5.jpg");
 }
 #ft11{
-    background: url("imagens/fm2.JPG");
+    background: url("imagens/rj-3.jpg");
     background-position: 100% 100%;
     background-size: 250px 250px;
     background-color: #ffffff;
@@ -515,10 +513,10 @@ aside#video strong{
     
 }
 #ft11:active{
-    background: url("imagens/rj-gray2.jpg");
+    background: url("imagens/rj-pink.jpg");
 }
 #ft12{
-    background: url("imagens/fm.JPG");
+    background: url("imagens/rj-gray2.jpg");
     background-position: 100% 100%;
     background-size: 250px 250px;
     background-color: #ffffff;

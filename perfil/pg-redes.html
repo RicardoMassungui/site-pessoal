@@ -10,12 +10,10 @@
 </head>
 <body>
     <div id="data">
-        <p id="emonji">&#x231A;</p>
-        <input type="text" id="rel"/>
-        <script src="data.js"></script> |
         <script src="hora.js"></script>
-         
-     </div> 
+        <div id="dmy"><script src="data.js"></script>&#x231a;<input type="text" id="rel"/>&nbsp;&nbsp;</div>
+        
+    </div>
     <nav>
             
         <a id="foto" href="pg-main.html" target="_self" rel="next"><img src="imagens/rj-t-200.png" alt="Ricardo Massungui"></a>
@@ -28,7 +26,7 @@
     <hr>
     <div id="newdiv" >
             
-        <img  src="imagens/dev-20.jpeg" alt="developer" id="f1">
+        <img  src="imagens/dev-20.jpeg" alt="developer" id="f1" onmouseout="sair()">
         
         <!--<button class="btslider" onclick="troca(-1)"><</button>
         <div id="dvload">
@@ -39,7 +37,7 @@
     <hr>    
     <div id="title"><h1>&#x1F310; Redes</h1></div>
     <hr>
-    <main>
+    <main onmousemove="mover()" onclick="clicar()">
         
     <article>
        
@@ -48,74 +46,102 @@
         <h3><img src="imagens/rj-t-200.png" alt=""></h3>
         <ul>
             <li>
-                <p>
-                    <a class="externo" href="https://github.com/ricardomassungui/"  target="_blank" rel="external"><img class="seguir" src="imagens/github-t-1.png" alt="icone-github"></a>Clique no icone-github e acesse meus repositórios públicos e me segue lá no <strong>github.</strong>
-                </p>
+                <div class="redes">
+                    <p>
+                        <a class="externo" href="https://github.com/ricardomassungui/"  target="_blank" rel="external"><img class="seguir" src="imagens/github-t-1.png" alt="icone-github"></a>Clique no icone-github e acesse meus repositórios públicos e me segue lá no <strong>github.</strong>
+                    </p>
+                </div>
             </li>
             <li>
-                <p>
-                    <a class="externo" href="https://free.facebook.com/ricardomassungui/"  target="_blank" rel="external"><img class="seguir" src="imagens/facebook-4.png" alt="facebook"></a>Clique no icone-facebook, acesse meu perfil e me segue lá no <strong>facebook.</strong>
-                </p>
+                <div class="redes">
+                    <p>
+                        <a class="externo" href="https://free.facebook.com/photo.php?fbid=1007290020131369&id=100025511404753&set=a.102846743909039&refid=17"  target="_blank" rel="external"><img class="seguir" src="imagens/facebook-4.png" alt="facebook"></a>Clique no icone-facebook, acesse meu perfil e me segue lá no <strong>facebook.</strong>
+                    </p>
+                </div>
             </li>
                 <li>
-                    <p>
-                        <a class="externo" href="https://whatsapp.com/"  target="_blank" rel="external"><img class="seguir" src="imagens/whatsapp-1-2.png" alt="icone-github"></a>Clique no icone-whatsapp e nos adicione lá no <strong>whatsapp</strong> nesse terminal <strong>930815455</strong>!
-                    </p>
+                    <div class="redes">
+                        <p>
+                            <a class="externo" href="https://web.whatsapp.com/send?phone=930815455"  target="_blank" rel="external"><img class="seguir" src="imagens/whatsapp-1-2.png" alt="icone-github"></a>Clique no icone-whatsapp e nos adicione lá no <strong>whatsapp</strong> nesse terminal <strong>930815455</strong>!
+                        </p>
+                    </div>
                 </li>
                     <li>
-                        <p>
-                         <a class="externo" href="https://www.linkedin.com/in/ricardo-massungui-917418228/" target="_blank" rel="external"><img class="seguir" src="imagens/linkedin.png" alt="icone-linkedin"></a> Clique no ícone-linkedin e me segue lá no meu perfil profissional no <strong>linkedin.</strong>
-                        </p> 
+                        <div class="redes">
+                            <p>
+                             <a class="externo" href="https://www.linkedin.com/in/ricardo-massungui-917418228/" target="_blank" rel="external"><img class="seguir" src="imagens/linkedin.png" alt="icone-linkedin"></a> Clique no ícone-linkedin e me segue lá no meu perfil profissional no <strong>linkedin.</strong>
+                            </p>
+                        </div> 
                    </li>
                 <li>
-                    <p>
-                     <a class="externo" href="https://twitter.com/RicardoMassung" target="_blank" rel="external"><img class="seguir" src="imagens/twitter-t-1.png" alt="icone-github"></a> Clique no icone-twitter e me segue lá no meu perfil no <strong>twitter.</strong>
-                    </p> 
+                    <div class="redes">
+                        <p>
+                         <a class="externo" href="https://twitter.com/RicardoMassung" target="_blank" rel="external"><img class="seguir" src="imagens/twitter-t-1.png" alt="icone-github"></a> Clique no icone-twitter e me segue lá no meu perfil no <strong>twitter.</strong>
+                        </p>
+                    </div> 
                  </li>
                 <li>
-                    <p>
-                     <a class="externo" href="https://www.instagram.com/ricardomassungui/" target="_blank" rel="external"><img class="seguir" src="imagens/logo-instagram.png" alt="icone-linkedin"></a> Clique no ícone-instagram e me segue lá no meu perfil no <strong>instagram.</strong>
-                    </p> 
+                    <div class="redes">
+                        <p>
+                         <a class="externo" href="https://www.instagram.com/ricardomassungui/" target="_blank" rel="external"><img class="seguir" src="imagens/logo-instagram.png" alt="icone-linkedin"></a> Clique no ícone-instagram e me segue lá no meu perfil no <strong>instagram.</strong>
+                        </p>
+                    </div> 
                </li>
             <li>
-                <p>
-                 <a class="externo" href="https://www.tiktok.com/@ricardomassungui?/" target="_blank" rel="external"><img class="seguir" src="imagens/logo-tiktok.png" alt="icone-linkedin"></a> Clique no ícone-tiktok e me segue lá no meu perfil no <strong>tiktok.</strong>
-                </p> 
+                <div class="redes">
+                    <p>
+                     <a class="externo" href="https://www.tiktok.com/@ricardomassungui?/" target="_blank" rel="external"><img class="seguir" src="imagens/logo-tiktok.png" alt="icone-linkedin"></a> Clique no ícone-tiktok e me segue lá no meu perfil no <strong>tiktok.</strong>
+                    </p>
+                </div>
            </li>
            <li>
-                <p>
-                <a class="externo" href="https://t.me/ricardomassungui/" target="_blank" rel="external"><img class="seguir" src="imagens/logo-telegram.png" alt="icone-linkedin"></a> Clique no ícone-telegram se escreva, compartilhe e o meu canal no <strong>telegram.</strong>
-                </p> 
+                <div class="redes">
+                    <p>
+                    <a class="externo" href="https://t.me/ricardomassungui/" target="_blank" rel="external"><img class="seguir" src="imagens/logo-telegram.png" alt="icone-linkedin"></a> Clique no ícone-telegram se escreva, compartilhe e o meu canal no <strong>telegram.</strong>
+                    </p>
+                </div> 
           </li>
           <li>
-            <p>
-                <a class="externo" href="https://www.youtube.com/channel/UCF4Jkk4bCPjKiQ2HUagpLeA/" target="_blank" rel="external"><img class="seguir" src="imagens/logo-youtube.png" alt="icone-linkedin"></a> Clique no ícone-youtube se escreva, compartilhe e curta o meu canal no <strong>youtube.</strong>
-            </p> 
+            <div class="redes">
+                <p>
+                    <a class="externo" href="https://www.youtube.com/channel/UCF4Jkk4bCPjKiQ2HUagpLeA/" target="_blank" rel="external"><img class="seguir" src="imagens/logo-youtube.png" alt="icone-linkedin"></a> Clique no ícone-youtube se escreva, compartilhe e curta o meu canal no <strong>youtube.</strong>
+                </p>
+            </div> 
          </li>
       <li>
-         <p>
-            <a class="externo" href="https://github.com/easysoft-rm" target="_blank" rel="external"><img class="seguir" src="imagens/github-t-1.png" alt="icone-linkedin"></a> Clique no ícone-github acesse os repositórios públicos da easysoft technology e nos segue lá no <strong>github</strong> .
-        </p> 
+         <div class="redes">
+             <p>
+                <a class="externo" href="https://github.com/easysoft-rm" target="_blank" rel="external"><img class="seguir" src="imagens/github-t-1.png" alt="icone-linkedin"></a> Clique no ícone-github acesse os repositórios públicos da easysoft technology e nos segue lá no <strong>github</strong> .
+                     </p>
+         </div> 
      </li>
     <li>
-         <p>
-             <a class="externo" href="#" target="_self" rel="internal"><img class="seguir" src="imagens/logo-email-1.png" alt="logo-email"></a> envie as suas questões no meu correio eletrônico pessoal <em>jonhricardo949@gmail.com</em> no <strong>email.</strong>
-         </p>
+         <div class="redes">
+             <p>
+                 <a class="externo" href="" target="_self" rel="internal"><img class="seguir" src="imagens/logo-email-1.png" alt="logo-email"></a> envie as suas questões no meu correio eletrônico pessoal <em>jonhricardo949@gmail.com</em> no <strong>email.</strong>
+             </p>
+         </div>
      </li>
      <li>
-        <p>
-            <a class="externo" href="#" target="_self" rel="internal"><img class="seguir" src="imagens/logo-email.png" alt="logo-email"></a> envie as suas questões no correio eletrônico da easysoft Technology apartir de <em>ricardomassungui@gmail.com</em> no <strong>email.</strong>
-        </p>
+        <div class="redes">
+            <p>
+                <a class="externo" href="#" target="_self" rel="internal"><img class="seguir" src="imagens/logo-email.png" alt="logo-email"></a> envie as suas questões no correio eletrônico da easysoft Technology apartir de <em>ricardomassungui@gmail.com</em> no <strong>email.</strong>
+            </p>
+        </div>
     </li>
     <li>
-        <p>
-            <a class="externo" href="#" target="_self" rel="internal"><img class="seguir" src="imagens/logo-contatos.png" alt="contatos"></a> entre em contato comigo apartir do meu terminal pessoal <strong>930-815-455.</strong>
-        </p>
+        <div class="redes">
+            <p>
+                <a class="externo" href="#" target="_self" rel="internal"><img class="seguir" src="imagens/logo-contatos.png" alt="contatos"></a> entre em contato comigo apartir do meu terminal pessoal <strong>930-815-455.</strong>
+            </p>
+        </div>
     </li>
     <li>
-        <p>
-            <a class="externo" href="#" target="_self" rel="internal"><img class="seguir" src="imagens/logo-contatos-1.png" alt="contatos"></a> entre em contato com a easysoft Technology apartir desse terminal <strong>936179015/930-815-455.</strong>
-        </p>
+        <div class="redes">
+            <p>
+                <a class="externo" href="#" target="_self" rel="internal"><img class="seguir" src="imagens/logo-contatos-1.png" alt="contatos"></a> entre em contato com a easysoft Technology apartir desse terminal <strong>936179015/930-815-455.</strong>
+            </p>
+        </div>
     </li>
     </ul>   
         
@@ -130,7 +156,7 @@
        
         <p>&copy; 2021 Perfil Académico, Feito na<a href="https://github.com/easysoft-rm">EasySoft</a>By<a href="https://github.com/ricardomassungui">Ricardo Massungui.</a></p>
     </footer>
-    <script src="easysoft.js"></script>
+    <script src="redes.js"></script>
 </body>
 </html>    
         

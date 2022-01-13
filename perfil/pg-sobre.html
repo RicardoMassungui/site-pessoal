@@ -10,12 +10,10 @@
 </head>
 <body>
     <div id="data">
-            <p id="emonji">&#x231A;</p>
-            <input type="text" id="rel"/>
-            <script src="data.js"></script> |
-            <script src="hora.js"></script>
-             
-         </div>   
+        <script src="hora.js"></script>
+        <div id="dmy"><script src="data.js"></script>&#x231a;<input type="text" id="rel"/>&nbsp;&nbsp;</div>
+        
+    </div>
     <nav>
             
             <a id="foto" href="pg-main.html" target="_self" rel="next"><img src="imagens/rj-t-200.png" alt="Ricardo Massungui"></a>
@@ -27,7 +25,7 @@
         <hr>  
         <div id="newdiv" >
             
-            <img  src="imagens/dev-10-2.jpg" alt="developer" id="f1">
+            <img  src="imagens/dev-10-2.jpg" alt="developer" id="f1" onmouseout="sair()">
             
             <!--<button class="btslider" onclick="troca(-1)"><</button>
             <div id="dvload">
@@ -37,7 +35,7 @@
           </div>
         <hr>
         <div id="title"><h1>&#x1f913; Sobre</h1></div>
-    <main>
+    <main onmousemove="mover()" onclick="clicar()">
         
     <article>
        

@@ -42,19 +42,17 @@ div#title{
     max-width: 1280px;
     margin: auto;
 }
-div#data p#emonji{
-    float: right;
-    background: none;
-    padding: 0px;
-    border-radius: 0px;
-}
 div#data{
     float: right;
     color: white;
-    background:linear-gradient(to top, var(--cor2), var(--cor1));
+    /*background:linear-gradient(to top, var(--cor2), var(--cor1));*/
     padding: 5px;
     border-radius: 5px;
+   
     
+}
+div#data div#dmy{
+ float: right;
 }
 div#data input#rel{
     color: black;
@@ -72,7 +70,13 @@ div#data input#rel{
 #newdiv img{
    width: 100%;
 }
-
+ul div.redes{
+    border: 1px solid var(--cor5);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+}
 div#title:hover{
     color: red;
     -webkit-transition: all .4s ease-in;

@@ -41,19 +41,17 @@ div#title:hover{
     color: red;
     -webkit-transition: all .4s ease-in;
 }
-div#data p#emonji{
-    float: right;
-    background: none;
-    padding: 0px;
-    border-radius: 0px;
-}
 div#data{
     float: right;
     color: white;
-    background:linear-gradient(to top, var(--cor2), var(--cor1));
+    /*background:linear-gradient(to top, var(--cor2), var(--cor1));*/
     padding: 5px;
     border-radius: 5px;
+   
     
+}
+div#data div#dmy{
+ float: right;
 }
 div#data input#rel{
     color: black;
@@ -119,6 +117,7 @@ nav{
     min-width: 128px;
     max-width: 1280px;
     margin: auto;
+    
 }
 nav > #foto{
     background: transparent;
@@ -232,6 +231,7 @@ aside > h3{
     font-size: 1.5em;
     text-align: center;
     margin-bottom: 10px;
+    
 }
 aside > h3::before{
     content: url("imagens/especificacoes-04.png");

@@ -44,19 +44,23 @@ div#title:hover{
     color: red;
     -webkit-transition: all .4s ease-in;
 }
-div#data p#emonji{
-    float: right;
+/*div#data p#emonji{
+    
     background: none;
     padding: 0px;
     border-radius: 0px;
-}
+}*/
 div#data{
     float: right;
     color: white;
-    background:linear-gradient(to top, var(--cor2), var(--cor1));
+    /*background:linear-gradient(to top, var(--cor2), var(--cor1));*/
     padding: 5px;
     border-radius: 5px;
+   
     
+}
+div#data div#dmy{
+ float: right;
 }
 div#data input#rel{
     color: black;
@@ -320,6 +324,12 @@ aside#bio ul{
 }
 aside#bio ul p{
     text-align: center;
+}
+p#pbio{
+    background: linear-gradient(to bottom, var(--cor0), rgb(99, 206, 255));
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.192);
+    padding: 10px;
+    border-radius: 10px;
 }
 aside > h3{
     background-color: var(--cor4) ;
