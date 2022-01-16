@@ -1,4 +1,11 @@
-
+@media only screen and (max-width: 610px) {
+    input{
+        margin: 5px;
+    }
+    input.botao{
+        margin-top: 5px;
+    }
+}
     
        input#blue{
             color: white;
