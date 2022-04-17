@@ -11,7 +11,7 @@ function moverf(){
  // imagens da div slider
  function moverp(){
     let evento = document.querySelector('img#perfil')
-     evento.src='imagens/ricardo-fp_2.png'
+     evento.src='imagens/ricardo-massungui2.png'
  
  }
  function sairp(){

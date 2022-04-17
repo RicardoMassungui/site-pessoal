@@ -167,7 +167,7 @@ nav > #foto::before{
 main{
     background-color: white;
     min-width: 100px;
-    max-width: 1000px;
+    max-width: 1280px;
     margin: auto;
     padding: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
@@ -446,7 +446,7 @@ aside#video strong{
     background: url("imagens/programming.jpg");
 }
 #ft7{
-    background: url("imagens/ricardo-fp_2.png");
+    background: url("imagens/ricardo-massungui2.png");
     background-position: 100% 100%;
     background-size: 250px 250px;
     background-color: #ffffff;
