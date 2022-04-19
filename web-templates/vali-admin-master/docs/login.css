@@ -1,0 +1,28 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'nfonte';
+    src: url('BebasNeue-Regular.otf') format('opentype'), url('BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    /*
+    Tipos de formatos()
+    - opentype (otf)
+    - truetype (ttf)
+    - embedded-opentype
+    - truetype-aat (apple advanced Typegraphy)
+    -svg
+    */ 
+    }
+    h1{
+        font-family: 'nfonte', Times, serif;
+        font-size: 3em;
+        font-weight: normal;
+    }
+body{
+    height: 100vh;
+   background-image: url("images/vindo.jpg");
+   background-position: center center;
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
